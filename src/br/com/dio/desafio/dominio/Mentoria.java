@@ -12,10 +12,22 @@ public class Mentoria extends Conteudo{
         return XP_PADRAO + 20d;
     }
 
+    @Override
     public String getTitulo() {
         return titulo;
     }
 
+    @Override
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    @Override
+    public String getDescricao() {
+        return descricao;
+    }
+
+    @Override
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
@@ -36,4 +48,6 @@ public class Mentoria extends Conteudo{
                 ", data=" + data +
                 '}';
     }
+
+
 }
